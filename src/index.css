@@ -1,0 +1,55 @@
+:root {
+  /* Palette dérivée du logo SIRI */
+  --color-primary: #3B82F6;       /* Bleu dominant */
+  --color-secondary: #F97316;     /* Orange complémentaire */
+  --color-accent: #FB923C;        /* Orange vif pour accents */
+  --color-text: #1F2937;          /* Gris foncé chaud pour le texte */
+  --color-bg: #F9FAFB;            /* Fond clair et chaud */
+  --color-border: #E5E7EB;        /* Gris clair pour les bordures */
+
+  /* Tokens de style selon le brief */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* Échelle d'espacement (pour référence, à utiliser dans les composants) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main-footer {
+  background-color: var(--secondary);
+  color: var(--text-secondary);
+  padding: 2rem;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}

@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build",
+        "buildCommand": "npm run build:vercel"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/sitemap.xml",
+      "headers": {
+        "Content-Type": "application/xml"
+      },
+      "dest": "/sitemap.xml"
+    },
+    {
+      "src": "/robots.txt",
+      "headers": {
+        "Content-Type": "text/plain"
+      },
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/manifest.json"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/googlec86efcc402945178.html",
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "dest": "/googlec86efcc402945178.html"
+    }
+  ],
+  "github": {
+    "enabled": true,
+    "silent": true
+  }
+} 

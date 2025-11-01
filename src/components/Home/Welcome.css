@@ -1,0 +1,98 @@
+/* 
+  Styles pour la section "Welcome" (Hero)
+  Nouveau fichier : src/components/Home/Welcome.css 
+*/
+
+.welcome-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem;
+  background-color: var(--color-bg);
+  min-height: 60vh;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem; /* 48px */
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: var(--space-4); /* 16px */
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem; /* 20px */
+  color: #4B5563; /* Gris un peu plus doux */
+  max-width: 700px;
+  margin: 0 auto var(--space-6); /* 24px */
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4); /* 16px */
+}
+
+/* Styles globaux pour les boutons (à mettre dans un fichier commun plus tard si besoin) */
+.btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: #2563EB; /* Teinte plus foncée du primaire */
+  border-color: #2563EB;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .welcome-hero {
+    padding: 6rem 1rem;
+  }
+  .hero-title {
+    font-size: 2.5rem; /* 40px */
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}

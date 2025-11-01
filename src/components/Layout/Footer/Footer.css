@@ -1,0 +1,63 @@
+/* src/components/Layout/Footer/Footer.css */
+
+.main-footer {
+  background-color: #E5E7EB; /* Un gris clair des neutres, légèrement plus foncé que le fond */
+  padding: var(--space-6) 0; /* 24px top/bottom */
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  color: #6B7280; /* Gris neutre pour le texte */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-7); /* 32px left/right */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4); /* 16px */
+}
+
+.footer-copyright,
+.footer-credits,
+.footer-legal {
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+  text-align: center;
+}
+
+.footer-credits {
+  font-weight: 500;
+}
+
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4); /* 16px */
+}
+
+.footer-link {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: var(--space-3); /* 12px */
+  }
+
+  .footer-copyright,
+  .footer-credits,
+  .footer-legal {
+    text-align: center;
+    flex-basis: auto;
+  }
+}
