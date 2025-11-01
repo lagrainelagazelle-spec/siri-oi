@@ -20,8 +20,8 @@ Application web professionnelle de services de dépannage informatique dans les 
 
 ## 🚀 Démo
 
-- [Site en Production](https://mr22206.github.io/siri)
-- [Repository GitHub](https://github.com/mr22206/siri)
+- [Site en Production](https://mr22206.github.io/siri-web)
+- [Repository GitHub](https://github.com/mr22206/siri-web)
 
 ## ✨ Fonctionnalités
 
@@ -71,10 +71,10 @@ npm -v   # v8 ou supérieur recommandé
 2. **Installation**
 ```bash
 # Cloner le repository
-git clone https://github.com/mr22206/siri.git
+git clone https://github.com/mr22206/siri-web.git
 
 # Installer les dépendances
-cd siri
+cd siri-web
 npm install
 
 # Lancer en développement
@@ -120,7 +120,7 @@ src/
 
 2. **Variables d'Environnement**
 ```env
-PUBLIC_URL=/siri
+PUBLIC_URL=/siri-web
 ```
 
 3. **Déployer**
