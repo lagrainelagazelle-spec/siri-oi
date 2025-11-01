@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Page d'accueil -->
   <url>
-    <loc>https://mr22206.github.io/Computer-troubleshooting-site</loc>
+    <loc>https://mr22206.github.io/siri</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,7 +10,7 @@
 
   <!-- Services -->
   <url>
-    <loc>https://mr22206.github.io/Computer-troubleshooting-site/services</loc>
+    <loc>https://mr22206.github.io/siri/services</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -18,28 +18,28 @@
 
   <!-- Autres URLs sans # -->
   <url>
-    <loc>https://mr22206.github.io/Computer-troubleshooting-site/distance</loc>
+    <loc>https://mr22206.github.io/siri/distance</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://mr22206.github.io/Computer-troubleshooting-site/domicile</loc>
+    <loc>https://mr22206.github.io/siri/domicile</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://mr22206.github.io/Computer-troubleshooting-site/tarifs</loc>
+    <loc>https://mr22206.github.io/siri/tarifs</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://mr22206.github.io/Computer-troubleshooting-site/support</loc>
+    <loc>https://mr22206.github.io/siri/support</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

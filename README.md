@@ -20,8 +20,8 @@ Application web professionnelle de services de dépannage informatique dans les 
 
 ## 🚀 Démo
 
-- [Site en Production](https://mr22206.github.io/Computer-troubleshooting-site)
-- [Repository GitHub](https://github.com/mr22206/Computer-troubleshooting-site)
+- [Site en Production](https://mr22206.github.io/siri)
+- [Repository GitHub](https://github.com/mr22206/siri)
 
 ## ✨ Fonctionnalités
 
@@ -71,10 +71,10 @@ npm -v   # v8 ou supérieur recommandé
 2. **Installation**
 ```bash
 # Cloner le repository
-git clone https://github.com/mr22206/Computer-troubleshooting-site.git
+git clone https://github.com/mr22206/siri.git
 
 # Installer les dépendances
-cd Computer-troubleshooting-site
+cd siri
 npm install
 
 # Lancer en développement
@@ -120,7 +120,7 @@ src/
 
 2. **Variables d'Environnement**
 ```env
-PUBLIC_URL=/Computer-troubleshooting-site
+PUBLIC_URL=/siri
 ```
 
 3. **Déployer**
