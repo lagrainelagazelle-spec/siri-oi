@@ -1,0 +1,45 @@
+# Configuration du robots.txt
+# https://tech-info-tuto.vercel.app
+
+# Règles globales pour tous les robots
+User-agent: *
+Allow: /
+Allow: /services
+Allow: /distance
+Allow: /domicile
+Allow: /tarifs
+Allow: /support
+
+# Règles spécifiques pour Bingbot
+User-agent: Bingbot
+Crawl-delay: 2
+
+# Sitemap correct
+Sitemap: https://mr22206.github.io/siri-web/sitemap.xml
+
+# Ressources à ne pas indexer
+Disallow: /build/
+Disallow: /static/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.github/
+
+# Protection des assets
+Disallow: /assets/admin/
+Disallow: /assets/private/
+
+# Interdire l'indexation des pages d'erreur
+Disallow: /404
+Disallow: /error
+Disallow: /500
+
+# Interdire l'indexation des fichiers temporaires et de développement
+Disallow: /*.tmp$
+Disallow: /*.temp$
+Disallow: /*.json$
+Disallow: /*.map$
+Disallow: /*.md$
+Disallow: /*.log$
+
+# Autoriser explicitement les URLs avec hash
+Allow: /*#/

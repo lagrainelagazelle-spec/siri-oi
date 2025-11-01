@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://mr22206.github.io/siri-web/static/css/main.57555b42.css",
+    "main.js": "https://mr22206.github.io/siri-web/static/js/main.4c8fe960.js",
+    "static/js/453.1453e21e.chunk.js": "https://mr22206.github.io/siri-web/static/js/453.1453e21e.chunk.js",
+    "index.html": "https://mr22206.github.io/siri-web/index.html",
+    "main.57555b42.css.map": "https://mr22206.github.io/siri-web/static/css/main.57555b42.css.map",
+    "main.4c8fe960.js.map": "https://mr22206.github.io/siri-web/static/js/main.4c8fe960.js.map",
+    "453.1453e21e.chunk.js.map": "https://mr22206.github.io/siri-web/static/js/453.1453e21e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57555b42.css",
+    "static/js/main.4c8fe960.js"
+  ]
+}
