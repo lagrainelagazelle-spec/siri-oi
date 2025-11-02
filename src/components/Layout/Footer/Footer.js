@@ -32,7 +32,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>
-          by <a href="https://tech-info-tuto.vercel.app" target="_blank" rel="noopener noreferrer">TECH INFO TUTO</a> — All rights reserved © 2025–2025
+          by <a href="https://tech-info-tuto.vercel.app" target="_blank" rel="noopener noreferrer">S.i.R.i-Oi</a> — All rights reserved © 2025–2025
         </p>
       </div>
     </footer>
