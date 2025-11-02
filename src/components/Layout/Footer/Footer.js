@@ -6,7 +6,7 @@ function Footer() {
     <footer className="main-footer" role="contentinfo">
       <div className="footer-content">
         <div className="footer-section footer-brand" aria-label="Marque">
-          <h3 className="footer-logo">SíRí</h3>
+          <h3 className="footer-logo">S.I.R.I-OI</h3>
           <p className="footer-tagline">Solution • Infra • Réseau • Informatique</p>
         </div>
 

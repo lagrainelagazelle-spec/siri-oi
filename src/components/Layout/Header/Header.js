@@ -35,7 +35,7 @@ function Header() {
       <header className={`main-header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="header-content">
           <Link to="/" className="logo" onClick={() => setIsMenuOpen(false)}>
-            <span className="logo-text">SíRí</span>
+            <span className="logo-text">S.I.R.I-OI</span>
           </Link>
 
           <button 
