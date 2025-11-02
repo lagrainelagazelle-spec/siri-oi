@@ -20,8 +20,8 @@ Application web professionnelle de services de dépannage informatique dans les 
 
 ## 🚀 Démo
 
-- [Site en Production](https://mr22206.github.io/siri-web)
-- [Repository GitHub](https://github.com/mr22206/siri-web)
+- [Site en Production](https://lagrainelagazelle-spec.github.io/siri-oi)
+- [Repository GitHub](https://github.com/lagrainelagazelle-spec/siri-oi)
 
 ## ✨ Fonctionnalités
 
@@ -71,10 +71,10 @@ npm -v   # v8 ou supérieur recommandé
 2. **Installation**
 ```bash
 # Cloner le repository
-git clone https://github.com/mr22206/siri-web.git
+git clone https://github.com/lagrainelagazelle-spec/siri-oi.git
 
 # Installer les dépendances
-cd siri-web
+cd siri-oi
 npm install
 
 # Lancer en développement
@@ -120,7 +120,7 @@ src/
 
 2. **Variables d'Environnement**
 ```env
-PUBLIC_URL=/siri-web
+PUBLIC_URL=/siri-oi
 ```
 
 3. **Déployer**
@@ -238,4 +238,4 @@ Le site est optimisé pour :
 
 ---
 
-Made with ❤️ by [Mohammad Rezki](https://github.com/mr22206)
+Made with ❤️ by [Mohammad Rezki](https://github.com/lagrainelagazelle-spec)
