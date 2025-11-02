@@ -65,12 +65,12 @@
 
 .btn-secondary {
   background-color: var(--color-bg);
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 .btn-secondary:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   color: white;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);

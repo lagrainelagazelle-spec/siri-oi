@@ -1,10 +1,10 @@
 :root {
-  /* Palette dérivée du logo SIRI */
-  --color-primary: #3B82F6;       /* Bleu dominant */
-  --color-secondary: #F97316;     /* Orange complémentaire */
+  /* Palette dérivée du nouveau logo SIRI */
+  --color-primary: #3B82F6;       /* Bleu du logo */
+  --color-secondary: #F97316;     /* Orange du logo */
   --color-accent: #FB923C;        /* Orange vif pour accents */
   --color-text: #1F2937;          /* Gris foncé chaud pour le texte */
-  --color-bg: #F9FAFB;            /* Fond clair et chaud */
+  --color-bg: #FFFFFF;            /* Fond blanc pur pour contraste */
   --color-border: #E5E7EB;        /* Gris clair pour les bordures */
 
   /* Tokens de style selon le brief */
@@ -33,6 +33,11 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
+}
+
+*:focus-visible {
+  outline: 2px solid rgba(249, 115, 22, 0.6); /* secondary @ 60% */
+  outline-offset: 2px;
 }
 
 code {

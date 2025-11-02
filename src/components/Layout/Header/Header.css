@@ -41,6 +41,14 @@
   letter-spacing: -1px;
 }
 
+.logo-byline {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
 /* Suppression de l'ancien style du logo (.dot, .logo-icon) */
 
 .nav-menu {
@@ -66,7 +74,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   transition: width 0.3s ease;
 }
 
@@ -160,23 +168,24 @@
 
   .nav-menu {
     position: fixed;
-    top: 80px; /* Ajusté à la nouvelle hauteur du header */
+    top: 0; /* Aligné en haut */
     left: 0;
     right: 0;
     bottom: 0;
     background: var(--color-bg);
-    padding: 2rem;
+    padding-top: 80px; /* Espace pour le header */
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Aligne les éléments en haut */
     gap: 2rem;
-    transform: translateY(-100%);
+    transform: translateX(100%); /* Modifié pour une transition latérale */
     transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     overflow-y: auto;
+    z-index: 999; /* Inférieur au logo et au bouton menu */
   }
 
   .nav-menu.active {
-    transform: translateY(0);
+    transform: translateX(0); /* Modifié pour une transition latérale */
   }
   
   .nav-link {

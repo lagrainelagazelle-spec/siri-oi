@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { FiCpu, FiServer, FiWifi, FiMonitor } from 'react-icons/fi';
 import '../styles/pages/Services.css';
 
 function Services() {
@@ -15,121 +16,133 @@ function Services() {
     }
   }, [location]);
 
-  const services = [
+  const pillars = [
     {
-      id: "depannage-distance",
-      title: "Dépannage à Distance",
-      description: "Intervention rapide sur votre ordinateur via TeamViewer",
-      icon: "🖥️",
-      color: "#4834d4",
+      id: 'solution',
+      title: 'Solution',
+      icon: <FiCpu />,
+      description:
+        "Applications et intégrations sur‑mesure pour optimiser vos processus et votre quotidien.",
       details: [
-        "Prise en main à distance sécurisée",
-        "Diagnostic complet de votre système",
-        "Résolution des problèmes Windows/Mac",
-        "Installation de logiciels",
-        "Nettoyage et optimisation"
-      ]
+        "Étude de besoin et cahier des charges",
+        "Développement d'applications (web/desktop)",
+        "Intégration d'outils (CRM/ERP)",
+        "Automatisations et scripts",
+        "Conseil et stratégie numérique",
+      ],
     },
     {
-      id: "intervention-domicile",
-      title: "Intervention à Domicile",
-      description: "Dépannage et maintenance sur site dans le 06",
-      icon: "🏠",
-      color: "#00d2d3",
+      id: 'infra',
+      title: 'Infra',
+      icon: <FiServer />,
+      description:
+        "Parc et serveurs fiables, maintenus et dimensionnés pour durer et évoluer.",
       details: [
-        "Déplacement à votre domicile",
-        "Diagnostic matériel et logiciel",
-        "Réparation sur place",
-        "Installation de périphériques",
-        "Configuration réseau"
-      ]
+        "Installation et configuration de serveurs",
+        "Gestion postes Windows/Mac/Linux",
+        "Stockage et sauvegardes",
+        "Virtualisation",
+        "Maintenance préventive et curative",
+      ],
     },
     {
-      id: "formation",
-      title: "Formation",
-      description: "Initiations et perfectionnement en informatique",
-      icon: "📚",
-      color: "#0097e6",
+      id: 'reseau',
+      title: 'Réseau',
+      icon: <FiWifi />,
+      description:
+        "Architectures réseau performantes et sécurisées, sur site et à distance.",
       details: [
-        "Formation personnalisée",
-        "Accompagnement pas à pas",
-        "Support pédagogique",
-        "Exercices pratiques",
-        "Suivi post-formation"
-      ]
+        "Routeurs, switchs, pare‑feux",
+        "Wi‑Fi pro (couverture, QoS)",
+        "VPN et accès distant",
+        "Segmentation et sécurité",
+        "Supervision et monitoring",
+      ],
     },
     {
-      id: "securite",
-      title: "Sécurité",
-      description: "Protection antivirus, sauvegardes, sécurisation de vos données et appareils.",
-      icon: "🔒",
-      color: "#44bd32",
+      id: 'informatique',
+      title: 'Informatique',
+      icon: <FiMonitor />,
+      description:
+        "Support réactif, dépannage et formation pour vos équipes et vos outils.",
       details: [
-        "Installation d'antivirus",
-        "Configuration des sauvegardes",
-        "Sécurisation des comptes",
-        "Protection des données personnelles",
-        "Mise à jour des systèmes de sécurité"
-      ]
+        "Support utilisateurs (site/distance)",
+        "Dépannage matériel/logiciel",
+        "Gestion des licences",
+        "Formation outils bureautiques",
+        "Bonnes pratiques sécurité",
+      ],
     },
-    {
-      id: "optimisation",
-      title: "Optimisation",
-      description: "Amélioration des performances de vos appareils, nettoyage et mise à jour.",
-      icon: "⚡",
-      color: "#f0932b",
-      details: [
-        "Analyse des performances",
-        "Nettoyage système",
-        "Mise à jour des logiciels",
-        "Optimisation du démarrage",
-        "Gestion de l'espace disque"
-      ]
-    },
-    {
-      id: "creation-sites",
-      title: "Création de Sites Web",
-      description: "Sites vitrines, e-commerce et applications web sur mesure pour votre activité",
-      icon: "🌐",
-      color: "#2d98da",
-      details: [
-        "Sites vitrines professionnels",
-        "Solutions e-commerce",
-        "Applications web sur mesure",
-        "Design responsive",
-        "Maintenance et mises à jour"
-      ]
-    }
+  ];
+
+  const subServices = [
+    { id: 'web', title: 'Création de Sites Web', path: '/services/web', desc: 'Vitrines, e‑commerce, apps web', icon: '🌐' },
+    { id: 'securite', title: 'Sécurité', path: '/services/securite', desc: 'Protection et sauvegardes', icon: '🔒' },
+    { id: 'optimisation', title: 'Optimisation', path: '/services/optimisation', desc: 'Performance et tuning', icon: '⚡' },
+    { id: 'formation', title: 'Formation', path: '/services/formation', desc: 'Initiations et perfectionnement', icon: '📚' },
   ];
 
   return (
     <div className="page-container">
       <div className="section-header">
-        <h1>Nos Services</h1>
-        <p className="section-subtitle">Solutions complètes pour tous vos besoins informatiques</p>
+        <h1>Nos Piliers de Services</h1>
+        <p className="section-subtitle">
+          Une expertise claire et durable organisée autour de 4 piliers
+        </p>
       </div>
 
+      {/* Sous‑navigation collante */}
+      <nav className="pillars-nav">
+        {pillars.map((p) => (
+          <a key={p.id} href={`#${p.id}`} className="pill-nav-link">
+            {p.title}
+          </a>
+        ))}
+      </nav>
+
+      {/* Grille de cartes d’accès rapide */}
+      <div className="pillars-grid">
+        {pillars.map((p) => (
+          <a key={p.id} href={`#${p.id}`} className="pillar-card">
+            <div className="pillar-icon">{p.icon}</div>
+            <h3>{p.title}</h3>
+            <p>{p.description}</p>
+          </a>
+        ))}
+      </div>
+
+      {/* Autres rubriques */}
+      <div className="section-header" style={{marginTop: '1rem'}}>
+        <h2>Autres rubriques</h2>
+      </div>
+      <div className="pillars-grid">
+        {subServices.map((s) => (
+          <a key={s.id} href={s.path} className="pillar-card">
+            <div className="pillar-icon">{s.icon}</div>
+            <h3>{s.title}</h3>
+            <p>{s.desc}</p>
+          </a>
+        ))}
+      </div>
+
+      {/* Sections détaillées */}
       <div className="services-detailed">
-        {services.map((service) => (
-          <div 
-            key={service.id} 
-            id={service.id} 
-            className="service-block"
-          >
+        {pillars.map((p) => (
+          <section key={p.id} id={p.id} className="service-block">
             <div className="service-header">
-              <span className="service-icon">{service.icon}</span>
-              <h2>{service.title}</h2>
+              <span className="service-icon">{p.icon}</span>
+              <h2>{p.title}</h2>
             </div>
-            <p className="service-description">{service.description}</p>
+            <p className="service-description">{p.description}</p>
             <div className="service-details">
-              <h3>Ce service inclut :</h3>
+              <h3>Ce pilier couvre :</h3>
               <ul>
-                {service.details?.map((detail, index) => (
-                  <li key={index}>{detail}</li>
+                {p.details.map((d, i) => (
+                  <li key={i}>{d}</li>
                 ))}
               </ul>
             </div>
-          </div>
+          </section>
         ))}
       </div>
     </div>

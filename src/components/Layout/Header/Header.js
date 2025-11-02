@@ -35,7 +35,6 @@ function Header() {
       <header className={`main-header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="header-content">
           <Link to="/" className="logo" onClick={() => setIsMenuOpen(false)}>
-            {/* Remplacement du logo par le nouveau nom de la marque */}
             <span className="logo-text">SíRí</span>
           </Link>
 
@@ -52,15 +51,13 @@ function Header() {
           <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
             <Link to="/" className="nav-link">Accueil</Link>
             <Link to="/services" className="nav-link">Services</Link>
-            <Link to="/distance" className="nav-link service-link">À Distance</Link>
-            <Link to="/domicile" className="nav-link service-link">À Domicile</Link>
             <Link to="/tarifs" className="nav-link">Tarifs</Link>
             <Link to="/support" className="nav-link">Contact</Link>
             
             <div className="nav-contact">
-              <a href="tel:0661388374" className="contact-button">
+              <a href="tel:+262692154474" className="contact-button">
                 <span className="phone-icon">📞</span>
-                06 61 38 83 74
+                +262 692 15 44 74
               </a>
             </div>
           </nav>

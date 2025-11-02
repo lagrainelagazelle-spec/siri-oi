@@ -1,4 +1,5 @@
 import '../styles/pages/Support.css';
+import QuoteForm from '../components/QuoteForm/QuoteForm';
 
 function Support() {
   return (
@@ -16,8 +17,8 @@ function Support() {
               <h3>Assistance Téléphonique</h3>
             </div>
             <p className="availability">Disponible 7j/7</p>
-            <a href="tel:0661388374" className="contact-button phone">
-              06 61 38 83 74
+            <a href="tel:+262692154474" className="contact-button phone">
+              +262 692 15 44 74
             </a>
             <p className="info-text">
               Pour une assistance immédiate ou une demande urgente
@@ -30,33 +31,16 @@ function Support() {
               <h3>Email</h3>
             </div>
             <p className="availability">Réponse sous 24h</p>
-            <a href="mailto:techinfotuto@gmail.com" className="contact-button email">
-              techinfotuto@gmail.com
+            <a href="mailto:hidouche.laguehal@orange.fr" className="contact-button email">
+              hidouche.laguehal@orange.fr
             </a>
             <p className="info-text">
               Pour les demandes détaillées et les devis
             </p>
           </div>
-
-          <div className="contact-card">
-            <div className="card-header">
-              <span className="contact-icon">💬</span>
-              <h3>Discord</h3>
-            </div>
-            <p className="availability">Communauté active</p>
-            <a 
-              href="https://discord.gg/zaeGWv74hB" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="contact-button discord"
-            >
-              Rejoindre le serveur
-            </a>
-            <p className="info-text">
-              Pour échanger et obtenir de l'aide de la communauté
-            </p>
-          </div>
         </div>
+
+        <QuoteForm />
 
         <div className="support-features">
           <h2>Pourquoi nous contacter ?</h2>
