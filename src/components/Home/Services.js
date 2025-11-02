@@ -61,11 +61,11 @@ function Services() {
         <div className="services-grid">
           {services.map((service) => (
             <div key={service.id} className="service-card">
-              <div className="service-icon-wrapper">
+              <h3 className="service-title">{service.title}</h3>
+              <div className="service-icon-wrapper" aria-hidden="true">
                 {service.icon}
               </div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <p className="service-text">{service.description}</p>
               <div className="card-footer">
                 <Link to={service.link} className="learn-more">
                   En savoir plus <span>&rarr;</span>
