@@ -15,7 +15,7 @@ User-agent: Bingbot
 Crawl-delay: 2
 
 # Sitemap correct
-Sitemap: https://mr22206.github.io/siri-web/sitemap.xml
+Sitemap: https://lagrainelagazelle-spec.github.io/siri-oi/sitemap.xml
 
 # Ressources à ne pas indexer
 Disallow: /build/

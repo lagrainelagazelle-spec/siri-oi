@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://lagrainelagazelle-spec.github.io/siri-web/static/css/main.57555b42.css",
-    "main.js": "https://lagrainelagazelle-spec.github.io/siri-web/static/js/main.aca2ff18.js",
-    "static/js/453.1453e21e.chunk.js": "https://lagrainelagazelle-spec.github.io/siri-web/static/js/453.1453e21e.chunk.js",
-    "index.html": "https://lagrainelagazelle-spec.github.io/siri-web/index.html",
-    "main.57555b42.css.map": "https://lagrainelagazelle-spec.github.io/siri-web/static/css/main.57555b42.css.map",
-    "main.aca2ff18.js.map": "https://lagrainelagazelle-spec.github.io/siri-web/static/js/main.aca2ff18.js.map",
-    "453.1453e21e.chunk.js.map": "https://lagrainelagazelle-spec.github.io/siri-web/static/js/453.1453e21e.chunk.js.map"
+    "main.css": "https://lagrainelagazelle-spec.github.io/siri-oi/static/css/main.57555b42.css",
+    "main.js": "https://lagrainelagazelle-spec.github.io/siri-oi/static/js/main.a245fe59.js",
+    "static/js/453.1453e21e.chunk.js": "https://lagrainelagazelle-spec.github.io/siri-oi/static/js/453.1453e21e.chunk.js",
+    "index.html": "https://lagrainelagazelle-spec.github.io/siri-oi/index.html",
+    "main.57555b42.css.map": "https://lagrainelagazelle-spec.github.io/siri-oi/static/css/main.57555b42.css.map",
+    "main.a245fe59.js.map": "https://lagrainelagazelle-spec.github.io/siri-oi/static/js/main.a245fe59.js.map",
+    "453.1453e21e.chunk.js.map": "https://lagrainelagazelle-spec.github.io/siri-oi/static/js/453.1453e21e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57555b42.css",
-    "static/js/main.aca2ff18.js"
+    "static/js/main.a245fe59.js"
   ]
 }
