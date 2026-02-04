@@ -45,7 +45,7 @@ function Tarifs() {
             <div className="info-card">
               <span className="info-icon">💳</span>
               <h4>Moyens de paiement</h4>
-              <p>Espèces, virement, PayPal</p>
+              <p>Espèces et virement</p>
             </div>
             <div className="info-card">
               <span className="info-icon">📄</span>
