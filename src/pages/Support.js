@@ -31,8 +31,8 @@ function Support() {
               <h3>Email</h3>
             </div>
             <p className="availability">Réponse sous 24h</p>
-            <a href="mailto:hidouche.laguehal@orange.fr" className="contact-button email">
-              hidouche.laguehal@orange.fr
+            <a href="mailto:siri-oi@orange.fr" className="contact-button email">
+              siri-oi@orange.fr
             </a>
             <p className="info-text">
               Pour les demandes détaillées et les devis
