@@ -85,7 +85,7 @@ function Services() {
   return (
     <div className="page-container">
       <div className="section-header">
-        <h1>Nos Piliers de Services</h1>
+        <h1>Nos Services Experts</h1>
         <p className="section-subtitle">
           Une expertise claire et durable organisée autour de 4 piliers
         </p>
